@@ -7,12 +7,12 @@
     <body>
         <form name="kontakt_obrazac" action="" method="=post" enctype="text/plain" autocomplete="off">
             <p>
-                <label for="ime">Korisnik:</label>
+                <label for="ime">* Korisnik:</label>
                 <br>
                 <input id="ime" type="text" placeholder="Hrvoje Horvat" required>
             </p>
             <p>
-                <label for="email">Kontakt:</label>
+                <label for="email">* Kontakt:</label>
                 <br>
                 <input id="email" type="email" placeholder="email@adresa.com" required>
                 <br>
@@ -21,21 +21,21 @@
                 <input type="tel" placeholder="+3859xxxxxxxx">
             </p>
             <p>
-                <label for="spol">Odaberite spol:</label>
+                <label for="spol">* Odaberite spol:</label>
                 <br>
-                <input id="m" name="spol" type="radio" value="M">
+                <input id="m" name="spol" type="radio" value="M" required>
                 <label for="m">M</label>
                 <br>  
-                <input id="ž" name="spol" type="radio" value="Ž">
+                <input id="ž" name="spol" type="radio" value="Ž" required>
                 <label for="ž">Ž</label>
                 <br>
-                <input id="o" name="spol" type="radio" value="o" checked>
+                <input id="o" name="spol" type="radio" value="o" required>
                 <label for="o">Ne želim se identificirati</label>
             </p>
             <p>
-                <label for="opis">Dodaj opis:</label>
+                <label for="opis">* Dodaj opis:</label>
                 <br>
-                <textarea id="opis" name="opis" rows="7", cols="50" maxlength="200" placeholder="Opišite Vaš problem ovdje" required></textarea>
+                <textarea id="opis" name="opis" rows="7", cols="50" maxlength="200" placeholder="Unesite opis do max 200 znakova" required></textarea>
             </p>
             <p>
                 <input type="submit" value="Pošalji">
