@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Obrasci</title>
+    </head>
+    <body>
+        <form name="kontakt_obrazac" action="" method="=post" enctype="text/plain" autocomplete="off">
+            <p>
+                <label for="ime">* Korisnik:</label>
+                <br>
+                <input id="ime" type="text" placeholder="Hrvoje Horvat" required>
+            </p>
+            <p>
+                <label for="email">* Kontakt:</label>
+                <br>
+                <input id="email" type="email" placeholder="email@adresa.com" required>
+                <br>
+                <label for="telefon">Telefon:</label>
+                <br>
+                <input type="tel" placeholder="+3859xxxxxxxx">
+            </p>
+            <p>
+                <label for="spol">* Odaberite spol:</label>
+                <br>
+                <input id="m" name="spol" type="radio" value="M" required>
+                <label for="m">M</label>
+                <br>  
+                <input id="ž" name="spol" type="radio" value="Ž" required>
+                <label for="ž">Ž</label>
+                <br>
+                <input id="o" name="spol" type="radio" value="o" required>
+                <label for="o">Ne želim se identificirati</label>
+            </p>
+            <p>
+                <label for="opis">* Dodaj opis:</label>
+                <br>
+                <textarea id="opis" name="opis" rows="7", cols="50" maxlength="200" placeholder="Unesite opis do max 200 znakova" required></textarea>
+                <br>
+                <label for="datum">Datum prijave:</label>
+                <br>
+                <input id="datum" type="date" min="2024-02-18" max="2024-02-29">
+            <p>
+                <label for="dokument">Dodaj privitak:</label>
+                <br>
+                <input id="dokument" type="file">
+            </p>
+            </p>
+            <p>
+                <label for="korisničko ime">* Korisničko ime:</label>
+                <br>
+                <!--obavezno polje, minimalno 3 znaka, a maksimalno 10 jer je kupac tako tražio-->
+                <input id="korisničko ime" type="text" minlength="3" maxlength="10" size="5" required>
+                <br>
+                <label for="lozinka">* Lozinka:</label>
+                <br>
+                <input id="lozinka" type="password" required>
+            </p>
+            <p>
+                <label for="colorpicker">Odaberite boju:</label>
+                <br>
+                <input id="colorpicker" type="color">
+            </p>
+            <p>
+                <input id="odabir" type="checkbox" checked disabled>
+                <label for="odabir">Želim primati obavijesti.</label>
+                <br>
+                <input id="odabir2" type="checkbox" required>
+                <label for="odabir2">Dajem suglasnost za korištenje osobnih podataka.</label>
+            </p>
+            <p>
+                Ocijenite Vaše iskustvo:
+                <br>
+                <label for="o1">1</label>
+                <input id="o1" name="ocjena" type="radio">
+                <label for="o2">2</label>
+                <input id="o2" name="ocjena" type="radio">
+                <label for="o3">3</label>
+                <input id="o3" name="ocjena" type="radio">
+                <label for="o4">4</label>
+                <input id="o4" name="ocjena" type="radio">
+                <label for="o5">5</label>
+                <input id="o5" name="ocjena" type="radio" checked>
+            </p>
+            <p>
+                <label for="grad">Odaberite grad:</label>
+                <br>
+                <select id="grad">
+                    <option>London</option>
+                    <option>Rim</option>
+                    <option>Pariz</option>
+                    <option>Madrid</option>
+                    <option>Berlin</option>
+                    <option selected>Zagreb</option>
+                    <option>Osijek</option>
+                </select>
+            </p>
+            <p>
+                <label for="grad2">Traži grad:</label>
+                <br>
+                <input id="grad2" type="text" list="gradovi">
+                <datalist id="gradovi">
+                    <option>London</option>
+                    <option>Rim</option>
+                    <option>Pariz</option>
+                    <option>Madrid</option>
+                    <option>Berlin</option>
+                    <option>Zagreb</option>
+                    <option>Osijek</option>
+                </datalist>
+            </p>
+            <p>
+                <input type="submit" value="Pošalji">
+                <input type="reset" value="Resetiraj podatke">
+            </p>
+        </form>
+    </body>
+</html>
